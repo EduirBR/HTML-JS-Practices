@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>ObjectClass</title>
+</head>
+
+<body>
+    <h1 align="center">
+        <font color="#000996"> Elegir el viaje </font>
+    </h1>
+    <div>
+        <table width="825" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <form name="form1" method="POST" action="">
+                        <p><a>Lugar de Salida</a>
+                            <select size="1" name="salida">
+                                <option value="">Selecciona lugar de salida</option>
+                                <option value="Caracas">Caracas</option>
+                                <option value="Maturin">Maturin</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Maracay">Maracay</option>
+                            </select>
+                        </p>
+                        <p><a>Lugar de llegada</a>
+                            <select size="1" name="llegada">
+                                <option value="">Selecciona Destino</option>
+                                <option value="Chile">Chile</option>
+                                <option value="USA">USA</option>
+                                <option value="Espana">Espana</option>
+                                <option value="England">England</option>
+                            </select>
+                        </p>
+                        <p><b>Medio de transporte</b>
+                            <input type="radio" value="Avion" checked name="medio">Avion
+                            <input type="radio" value="Tren" name="medio">Tren
+                            <input type="radio" value="Bus" name="medio">Bus
+                            <input type="button" value="Ver viaje" name="Ver" onclick="Validate(this.form)">
+                        </p>
+                    </form>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
