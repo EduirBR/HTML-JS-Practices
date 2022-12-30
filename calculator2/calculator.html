@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculadora 2</h1>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h3>Number A</h3>
+                </td>
+                <td>
+                    <h3>Number B</h3>
+                </td>
+                <td>
+                    <h3>Operator</h3>
+                </td>
+                <td>
+                    <h3>Result</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="numbera" value="0" onchange=calculator()></td>
+
+                <td><input type="text" id="numberb" value="0" onchange=calculator()></td>
+
+                <td align="center"><select id="operator" onchange=calculator()>
+                        <option selected="selected" value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="x">x</option>
+                        <option value="/">/</option>
+                    </select></td>
+                <td><input type="text" id="result" value="0" disabled></td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
